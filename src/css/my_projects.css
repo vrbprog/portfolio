@@ -1,3 +1,27 @@
 .my_projects {
   padding: 10px 0;
+  text-align: center;
+
+  .container {
+      h2 {
+        font-family: Impact;
+        font-size: 52px;
+        font-weight: 400;
+        line-height: 64px;
+        letter-spacing: 1.8px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        text-transform: uppercase;
+      }
+
+      span.accet-color {
+        color: var(--accet-green);
+      }
+  }
+
+  @media only screen and (min-width: 768px) {
+      font-size: 108px;
+      line-height: 124px;
+  }
+
 }
