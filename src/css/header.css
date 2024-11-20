@@ -1,5 +1,5 @@
 .header {
-  padding: 20px 0;
+  padding: 32px;
 }
 .nav {
   display: flex;
@@ -7,19 +7,58 @@
 
   .logo {
     font-family: Impact;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 22px;
     letter-spacing: 1.5px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 
-   span.accet-color {
+  span.accet-color {
     color: var(--accet-green);
-   }
+  }
 }
+
+.left-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.toggle {
+  width: 48px;
+  height: 24px;
+  background-color: #333;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: transform 0.3s;
+  }
+}
+
+.toggle.dark {
+  background-color: #f0f0f0;
+
+  &::before {
+    transform: translateX(24px);
+    background-color: #333;
+  }
+}
+
 .nav-list {
   display: none;
 }
@@ -29,6 +68,7 @@
 }
 .nav-link:hover,
 .nav-link:focus {
+  transition: 200ms ease-in;
   color: var(--hover-green);
 }
 
@@ -40,9 +80,8 @@
     justify-content: flex-end;
     gap: 40px;
   }
-  
-  .nav {
 
+  .nav {
     .logo {
       font-size: 32px;
       line-height: 32px;
