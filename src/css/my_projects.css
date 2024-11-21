@@ -29,11 +29,28 @@
 
   .project-img-card {
     border-radius: 16px;
+    margin-bottom: 16px;
+  }
+
+  .project-skills {
+    text-align: left;
+  }
+
+  .project-name {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
   }
 
   @media only screen and (min-width: 768px) {
-    font-size: 108px;
-    line-height: 124px;
+    h2 {
+      font-size: 108px;
+      line-height: 124px;
+    }
 
     .project-list {
       width: 704px;
