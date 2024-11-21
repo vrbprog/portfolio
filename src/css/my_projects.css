@@ -1,27 +1,48 @@
 .my_projects {
-  padding: 10px 0;
   text-align: center;
 
   .container {
-      h2 {
-        font-family: Impact;
-        font-size: 52px;
-        font-weight: 400;
-        line-height: 64px;
-        letter-spacing: 1.8px;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        text-transform: uppercase;
-      }
+    h2 {
+      font-family: Impact;
+      font-size: 52px;
+      font-weight: 400;
+      line-height: 64px;
+      letter-spacing: 1.8px;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      text-transform: uppercase;
+    }
 
-      span.accet-color {
-        color: var(--accet-green);
-      }
+    span.accet-color {
+      color: var(--accet-green);
+    }
+  }
+
+  .project-list {
+    width: 320px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    border-radius: 40px;
+  }
+
+  .project-img-card {
+    border-radius: 40px;
   }
 
   @media only screen and (min-width: 768px) {
-      font-size: 108px;
-      line-height: 124px;
+    font-size: 108px;
+    line-height: 124px;
+
+    .project-list {
+      width: 704px;
+    }
   }
 
+  @media only screen and (min-width: 1200px) {
+    .project-list {
+      width: 1008px;
+    }
+  }
 }
