@@ -181,7 +181,7 @@ const images = [
 const listProjects = document.querySelector('.project-list');
 const loadMoreButton = document.querySelector('.more-projects');
 
-let projectElem = document.querySelector("li.project_card");
+let projectElem = document.querySelector('li.project_card');
 
 loadMoreButton.addEventListener('click', loadProjects);
 
@@ -201,15 +201,14 @@ function loadProjects() {
   );
 
   let numberScrollSections = 3;
-  if((images.length - loadedProjectsCount) < 3) {
+  if (images.length - loadedProjectsCount < 3) {
     numberScrollSections = images.length - loadedProjectsCount;
   }
   window.scrollBy({
     top: heightProject * numberScrollSections,
     left: 0,
-    behavior: "smooth",
+    behavior: 'smooth',
   });
-
 
   loadedProjectsCount += remainingProjects.length;
 
@@ -248,15 +247,14 @@ function createMarkupProjects(images) {
         <div class="bottom-box">
           <h3 class="project-name">${alt}</h3>
           <a href="https://github.com/VH-str/project-JS-TeamWork-FullStalkers" target="_blanc">
-            <button class="visit-button">
-              VISIT
-
+            <div class="visit-button">
+              <span>VISIT</span>
               <svg width="24" height="24">
                 <use
-                  <use href="../img/icons.svg#icon-arrow-right"></use>
+                  <use href="${icon}#icon-icon_visit"></use>
                 ></use>
               </svg>
-            </button>
+            </div>
           </a>
         </div>
       </li>`

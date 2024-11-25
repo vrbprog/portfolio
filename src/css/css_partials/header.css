@@ -124,12 +124,6 @@
   gap: 24px;
 }
 
-.mob-menu li:hover,
-.mob-menu li:focus {
-  transition: 200ms ease-in;
-  color: var(--hover-green);
-}
-
 /* ham menu */
 .ham-menu {
   height: 32px;
