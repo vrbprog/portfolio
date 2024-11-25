@@ -253,7 +253,7 @@ function createMarkupProjects(images) {
 
               <svg width="24" height="24">
                 <use
-                  href="${icon}#icon-icon_visit"
+                  href="../img/my_projects/icon-icon_visit.svg#icon-icon_visit"
                 ></use>
               </svg>
             </button>
