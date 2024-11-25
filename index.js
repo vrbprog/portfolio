@@ -29,7 +29,7 @@ import{a as q,i as D,S as M,N as _,K as T,c as E}from"./assets/vendor-D5dh7xdJ.j
               VISIT
               <svg width="24" height="24">
                 <use
-                  href="../img/my_projects/icon-icon_visit.svg#icon-icon_visit"
+                  href="/img/my_projects/icon-icon_visit.svg#icon-icon_visit"
                 ></use>
               </svg>
             </button>
