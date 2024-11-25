@@ -182,13 +182,13 @@ const listProjects = document.querySelector('.project-list');
 const loadMoreButton = document.querySelector('.more-projects');
 
 let projectElem = document.querySelector("li.project_card");
+let heightProject = projectElem.getBoundingClientRect().height;
 
 loadMoreButton.addEventListener('click', loadProjects);
 
 let loadedProjectsCount = 0;
 
 function loadProjects() {
-  const heightProject = projectElem.getBoundingClientRect().height;
   const batchSize = 3;
   const remainingProjects = images.slice(
     loadedProjectsCount,
@@ -200,15 +200,36 @@ function loadProjects() {
     createMarkupProjects(remainingProjects)
   );
 
-  let numberScrollSections = 3;
-  if((images.length - loadedProjectsCount) < 3) {
-    numberScrollSections = images.length - loadedProjectsCount;
-  }
+  // window.scrollBy({
+  //   top: heightProject,
+  //   left: 0,
+  //   behavior: "smooth",
+  // });
+
+  // setTimeout(() => {
+  //   window.scrollBy({
+  //     top: heightProject,
+  //     left: 0,
+  //     behavior: "smooth",
+  //   });
+
+  //     setTimeout(() => {
+  //     window.scrollBy({
+  //       top: heightProject,
+  //       left: 0,
+  //       behavior: "smooth",
+  //     }); 
+  //     }, 400);
+
+  // }, 400);
+
+
   window.scrollBy({
-    top: heightProject * numberScrollSections,
+    top: heightProject * 3,
     left: 0,
     behavior: "smooth",
   });
+
 
 
   loadedProjectsCount += remainingProjects.length;
@@ -252,7 +273,7 @@ function createMarkupProjects(images) {
               VISIT
               <svg width="24" height="24">
                 <use
-                  href="/img/my_projects/icon-icon_visit.svg#icon-icon_visit"
+                  href="${icon}#icon-icon_visit"
                 ></use>
               </svg>
             </button>

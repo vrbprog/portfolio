@@ -1,6 +1,5 @@
 .benefits {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 10px 0;
 }
 
 .benefits-title {
@@ -48,91 +47,13 @@
   margin-bottom: 16px;
 }
 
-.benefits-p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  color: var(--color);
+@media screen and (max-width: 360px) {
 }
 
-/* Styles for Tablet devices */
-
-@media only screen and (min-width: 768px) {
-  .benefits {
-    padding-top: 124px;
-    padding-bottom: 124px;
-  }
-
-  .benefits-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 704px;
-    gap: 32px;
-  }
-
-  .benefits-item:first-child {
-    grid-column: 1 / span 2;
-    margin-left: 368px;
-  }
-
-  .benefits-item {
-    max-width: 336px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 0;
-  }
-
-  .benefits-title {
-    font-size: 108px;
-    line-height: 1.14815;
-    letter-spacing: 0.02em;
-    margin-bottom: 0;
-  }
-
-  .benefits-h {
-    font-size: 20px;
-    line-height: 1.6;
-  }
+@media screen and (min-width: 768px) {
 }
 
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
-  .benefits {
-    background-image: url("/img/benefits-img/bnf-bg-light.png");
-      background-size: 526px 428px;
-      background-repeat: no-repeat;
-      background-position: right 32px top 48px;
-  }
-
-    @media (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi) {
-      .benefits {
-        background-image: url("/img/benefits-img/bnf-bg-light-2x.png");
-      }
-    }
-  
-    @media (-webkit-min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi) {
-      .benefits {
-        background-image: url("/img/benefits-img/bnf-bg-light-3x.png");
-      }
-    }
-
-  .benefits-title {
-    max-width: 682px;
-  }
-
-  .benefits-list {
-    max-width: 1216px;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: -96px;
-  }
-
-    .benefits-item:first-child {
-      grid-column: 1 / span 3;
-      margin-left: 832px;
-    }
+@media screen and (min-width: 1280px) {
 }
+
+
