@@ -24,14 +24,14 @@ import{a as D,i as M,S as _,N as E,K as T,c as P}from"./assets/vendor-D5dh7xdJ.j
         <p class="project-skills">React, JavaScript, Node JS, Git</p>
         <div class="bottom-box">
           <h3 class="project-name">${s}</h3>
-          <a
+          <a class="visit-button"
             href="https://github.com/VH-str/project-JS-TeamWork-FullStalkers"
-            target="_blanc"
+            target="blanc"
           >
             VISIT
-              <svg width="24" height="24">
-                <use href="../img/my_projects/icon-icon_visit.svg#icon-icon_visit"></use>
-              </svg>
+            <svg width="24" height="24">
+              <use href="../img/my_projects/icon-icon_visit.svg#icon-icon_visit"></use>
+            </svg>
           </a>
         </div>
       </li>`).join("")}const b=document.querySelector(".ham-menu"),x=document.querySelector(".off-screen-menu");b.addEventListener("click",()=>{b.classList.toggle("active"),x.classList.toggle("active")});x.addEventListener("click",()=>{b.classList.toggle("active"),x.classList.toggle("active")});document.addEventListener("DOMContentLoaded",()=>{const o=document.querySelectorAll(".faq-item"),s=o[0],r=o[0].querySelector(".faq-answer"),c=o[0].querySelector(".faq-arrow"),e=s.querySelector(".faq-question");s.classList.add("open"),r.classList.add("show"),c.classList.add("open"),e.classList.add("active"),o.forEach(n=>{const i=n.querySelector(".faq-question"),l=n.querySelector(".faq-answer"),a=n.querySelector(".faq-arrow");i.addEventListener("click",()=>{t(n,l,a,i)}),a.addEventListener("click",d=>{d.stopPropagation(),t(n,l,a,i)})});function t(n,i,l,a){const d=i.classList.contains("show");o.forEach(u=>{u.classList.remove("open"),u.querySelector(".faq-answer").classList.remove("show"),u.querySelector(".faq-arrow").classList.remove("open"),u.querySelector(".faq-question").classList.remove("active")}),d||(n.classList.add("open"),i.classList.add("show"),l.classList.add("open"),a.classList.add("active"))}});const q=document.querySelector(".swiper-wrapper"),je=document.querySelector(".button-wrapper");function ve(o){const s=o.map(({author:r,avatar_url:c,review:e,_id:t})=>t===5?`<li class="swiper-slide">
