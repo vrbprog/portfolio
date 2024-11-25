@@ -30,7 +30,7 @@ import{a as D,i as M,S as _,N as E,K as T,c as P}from"./assets/vendor-D5dh7xdJ.j
           >
             VISIT
               <svg width="24" height="24">
-                <use href="./img/icons.svg#icon-arrow-right"></use>
+                <use href="../img/icons.svg#icon-arrow-right"></use>
               </svg>
           </a>
         </div>
