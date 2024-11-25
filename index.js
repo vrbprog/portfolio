@@ -30,7 +30,7 @@ import{a as q,i as D,S as M,N as _,K as T,c as E}from"./assets/vendor-D5dh7xdJ.j
 
               <svg width="24" height="24">
                 <use
-                  <use href="img/icons.svg#icon-arrow-right"></use>
+                  <use href="../img/icons.svg#icon-arrow-right"></use>
                 ></use>
               </svg>
             </button>
