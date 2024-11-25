@@ -250,6 +250,7 @@ function createMarkupProjects(images) {
           <a href="https://github.com/VH-str/project-JS-TeamWork-FullStalkers" target="_blanc">
             <button class="visit-button">
               VISIT
+
               <svg width="24" height="24">
                 <use
                   href="${icon}#icon-icon_visit"
