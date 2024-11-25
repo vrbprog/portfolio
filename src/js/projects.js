@@ -1,4 +1,4 @@
-import icon from './img/my_projects/icon-icon_visit.svg';
+import icon from '../img/my_projects/icon-icon_visit.svg';
 
 import projectDesk03 from '../img/my_projects/projects-desk-03-min.png';
 import projectDesk03_2x from '../img/my_projects/projects-desk-03@2x-min.png';
@@ -182,13 +182,13 @@ const listProjects = document.querySelector('.project-list');
 const loadMoreButton = document.querySelector('.more-projects');
 
 let projectElem = document.querySelector("li.project_card");
-let heightProject = projectElem.getBoundingClientRect().height;
 
 loadMoreButton.addEventListener('click', loadProjects);
 
 let loadedProjectsCount = 0;
 
 function loadProjects() {
+  const heightProject = projectElem.getBoundingClientRect().height;
   const batchSize = 3;
   const remainingProjects = images.slice(
     loadedProjectsCount,
@@ -200,36 +200,15 @@ function loadProjects() {
     createMarkupProjects(remainingProjects)
   );
 
-  // window.scrollBy({
-  //   top: heightProject,
-  //   left: 0,
-  //   behavior: "smooth",
-  // });
-
-  // setTimeout(() => {
-  //   window.scrollBy({
-  //     top: heightProject,
-  //     left: 0,
-  //     behavior: "smooth",
-  //   });
-
-  //     setTimeout(() => {
-  //     window.scrollBy({
-  //       top: heightProject,
-  //       left: 0,
-  //       behavior: "smooth",
-  //     }); 
-  //     }, 400);
-
-  // }, 400);
-
-
+  let numberScrollSections = 3;
+  if((images.length - loadedProjectsCount) < 3) {
+    numberScrollSections = images.length - loadedProjectsCount;
+  }
   window.scrollBy({
-    top: heightProject * 3,
+    top: heightProject * numberScrollSections,
     left: 0,
     behavior: "smooth",
   });
-
 
 
   loadedProjectsCount += remainingProjects.length;
