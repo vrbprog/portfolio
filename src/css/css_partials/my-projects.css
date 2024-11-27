@@ -70,12 +70,12 @@
     align-items: flex-end;
   }
 
-  .button_icon use {
+  .button_icon {
     stroke: red;
   }
 
-  path {
-    fill: orange;
+  svg path {
+    fill: red;
   }
 
   .visit-button {
