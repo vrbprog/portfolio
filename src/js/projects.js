@@ -251,7 +251,7 @@ function createMarkupProjects(images) {
             target="blanc"
           >
             VISIT
-            <svg class="button_icon" width="24" height="24">
+            <svg class="button_icon" width="24" height="24" fill="red">
               <use href="../img/icons.svg#icon-arrow45"></use>
             </svg>
           </a>
