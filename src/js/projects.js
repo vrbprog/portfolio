@@ -251,9 +251,9 @@ function createMarkupProjects(images) {
             target="blanc"
           >
             VISIT
-            <svg class="button_icon" width="24" height="24" fill="red">
-              <use href="../img/icons.svg#icon-arrow45"></use>
-            </svg>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="#00B068" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 16.25L16.25 1.75M16.25 1.75H2.75M16.25 1.75V15.25" stroke="#00B068" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
           </a>
         </div>
       </li>`
