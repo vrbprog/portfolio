@@ -1,4 +1,4 @@
-import icon from '../img/my_projects/icon-icon_visit.svg';
+import icon from '../img/icons.svg';
 
 import projectDesk03 from '../img/my_projects/projects-desk-03-min.png';
 import projectDesk03_2x from '../img/my_projects/projects-desk-03@2x-min.png';
@@ -246,13 +246,14 @@ function createMarkupProjects(images) {
         <p class="project-skills">React, JavaScript, Node JS, Git</p>
         <div class="bottom-box">
           <h3 class="project-name">${alt}</h3>
-          <a class="visit-button"
+          <a
+            class="visit-button"
             href="https://github.com/VH-str/project-JS-TeamWork-FullStalkers"
-            target="blanc"
+            target="_blank"
           >
-            VISIT
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="#00B068" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.75 16.25L16.25 1.75M16.25 1.75H2.75M16.25 1.75V15.25" stroke="#00B068" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <span>VISIT</span>
+            <svg class="button_icon" width="24" height="24">
+              <use href="${icon}#icon-arrow45"></use>
             </svg>
           </a>
         </div>
