@@ -30,8 +30,8 @@ import{a as D,i as M,S as B,N as E,K as T,c as _}from"./assets/vendor-D5dh7xdJ.j
           >
             VISIT
             <svg width="18" height="18" viewBox="0 0 18 18" fill="#00B068" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.75 16.25L16.25 1.75M16.25 1.75H2.75M16.25 1.75V15.25" stroke="#00B068" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+            <path d="M1.75 16.25L16.25 1.75M16.25 1.75H2.75M16.25 1.75V15.25" stroke="#00B068" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </a>
         </div>
       </li>`).join("")}const x=document.querySelector(".ham-menu"),b=document.querySelector(".off-screen-menu");x.addEventListener("click",()=>{x.classList.toggle("active"),b.classList.toggle("active")});b.addEventListener("click",()=>{x.classList.toggle("active"),b.classList.toggle("active")});document.addEventListener("DOMContentLoaded",()=>{const o=document.querySelectorAll(".faq-item"),s=o[0],r=o[0].querySelector(".faq-answer"),c=o[0].querySelector(".faq-arrow"),e=s.querySelector(".faq-question");s.classList.add("open"),r.classList.add("show"),c.classList.add("open"),e.classList.add("active"),o.forEach(n=>{const i=n.querySelector(".faq-question"),l=n.querySelector(".faq-answer"),a=n.querySelector(".faq-arrow");i.addEventListener("click",()=>{t(n,l,a,i)}),a.addEventListener("click",d=>{d.stopPropagation(),t(n,l,a,i)})});function t(n,i,l,a){const d=i.classList.contains("show");o.forEach(u=>{u.classList.remove("open"),u.querySelector(".faq-answer").classList.remove("show"),u.querySelector(".faq-arrow").classList.remove("open"),u.querySelector(".faq-question").classList.remove("active")}),d||(n.classList.add("open"),i.classList.add("show"),l.classList.add("open"),a.classList.add("active"))}});const q=document.querySelector(".swiper-wrapper"),je=document.querySelector(".button-wrapper");function ve(o){const s=o.map(({author:r,avatar_url:c,review:e,_id:t})=>t===5?`<li class="swiper-slide">
