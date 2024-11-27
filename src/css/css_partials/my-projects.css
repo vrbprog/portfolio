@@ -28,12 +28,12 @@
     border-radius: 16px;
   }
 
-  .button_icon {
-    stroke: #00b068;
-  }
-  /* svg {
+  /* .button_icon {
     stroke: #00b068;
   } */
+  svg {
+    stroke: #00b068;
+  }
 
   .project-img-card {
     border-radius: 16px;
