@@ -28,7 +28,7 @@
     border-radius: 16px;
   }
 
-  .button_icon {
+  .button_icon use {
     stroke: #00b068;
   }
   svg {
