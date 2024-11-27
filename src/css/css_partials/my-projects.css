@@ -31,9 +31,9 @@
   .button_icon {
     stroke: #00b068;
   }
-  svg {
-    stroke: #00b068; /* або будь-який інший колір */
-  }
+  /* svg {
+    stroke: #00b068; 
+  } */
 
   .project-img-card {
     border-radius: 16px;
