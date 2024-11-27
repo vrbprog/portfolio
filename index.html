@@ -13,8 +13,12 @@
       referrerpolicy="no-referrer"
     />
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
 
     <!-- Підключення фавікону на різні платформи -->
@@ -23,12 +27,12 @@
     <script type="module" crossorigin src="/portfolio/index.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-D5dh7xdJ.js">
     <link rel="stylesheet" crossorigin href="/portfolio/assets/vendor-BY8dMw6D.css">
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-Ci926H68.css">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-Dw3VrCWm.css">
   </head>
 
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container header-container">
     <nav class="nav">
       <a href="index.html" class="logo"
         >LLOYD<span class="accet-color">JEFFERSON.</span></a
@@ -63,24 +67,26 @@
     <li><a href="#work-together-title">Contacts</a></li>
   </ul>
 </div>
+
     <main>
-      <hero class="hero-main">
+      <section class="hero-main">
   <div class="container hero-container">
     <div class="hero-title-link">
       <h1 class="main-title">
         Hello, I am <span class="span">Fullstack developer</span>
       </h1>
-      <a class="hero-link" href="./my-projects.html">
-        <svg class="icon" width="30" height="16">
-          <use href="/portfolio/assets/desktop-two-min-BGpMdxV6.png"></use>
+      <a class="hero-link" href="#work-together-title">
+        <svg class="icon" width="36" height="36">
+          <use href="/portfolio/assets/icons-yh5Ih9pv.svg#icon-arrow-right"></use>
         </svg>
         <p class="hero-link-text">Order the project</p>
       </a>
     </div>
+
     <div class="hero-photo-text-container">
       <picture>
         <source
-          srcset="/portfolio/assets/img-hero-1x-CmHpaJU_.jpg, /portfolio/assets/img-hero-2x-B2sI6bEz.jpg 2x"
+          srcset="/portfolio/assets/img-hero-1x-CmHpaJU_.jpg 1x, /portfolio/assets/img-hero-1x-CmHpaJU_.jpg 2x"
           media="(min-width: 1280px)"
           type="image/jpg"
         />
@@ -114,92 +120,111 @@
       <a href="https://www.linkedin.com/ser-in-it" target="_blank">Linkedin</a>
     </li>
     <li class="hero-social-item">
-      <a href="./" target="_blank">GitHub</a>
+      <a
+        href="https://github.com/VH-str/project-JS-TeamWork-FullStalkers"
+        target="_blank"
+        >GitHub</a
+      >
     </li>
   </ul>
-</hero>
+</section>
 
-      <section class="about-section section" id="about-me">
-  <div class="container about-container">
-    <h2 class="about-title">ABOUT <span class="one-line">ME</span></h2>
+      <section class="section-wrapper abt" id="about">
+  <div class="container section-about-me">
+    <h2 class="about-me-section">
+      About <span class="about-me-section-span">me</span>
+    </h2>
+    <div class="about-me-container">
+      <picture class="about-me-photo">
+        <source
+          media="(min-width: 1280px)"
+          srcset="/portfolio/assets/about-me-pc-CKgLa7Bp.jpg 1x, /portfolio/assets/about-me-pc-2x-CeiIqQl6.jpg 2x"
+          type="image/jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/portfolio/assets/about-me-tab-Cuh4kZHG.jpg 1x, /portfolio/assets/about-me-tab-2x-wqAJKqVn.jpg 2x"
+          type="image/jpg"
+        />
+        <source
+          media="(max-width: 767.98px)"
+          srcset="/portfolio/assets/about-me-mob-DMh-0CKT.jpg 1x, /portfolio/assets/about-me-mob-2x-BJOhzVwk.jpg 2x"
+          type="image/jpg"
+        />
 
-    <picture>
-      <source
-        srcset="./img/about/about-desktop-1x.jpg 1x, ./img/about/about-desktop-2x.jpg 2x"
-        media="(min-width:1280px)"
-      />
-      <source
-        srcset="./img/about/about-tablet-1x.jpg 1x, ./img/about/about-tablet-2x.jpg 2x"
-        media="(min-width:768px)"
-      />
-      <source
-        srcset="./img/about/about-mobile-1x.jpg 1x, ./img/about/about-mobile-2x.jpg 2x"
-        media="(max-width:767px)"
-      />
-      <img
-        class="about-foto"
-        src="./img/about/about-desktop-1x.jpg"
-        alt="Lloyd Jefferson"
-        width="320"
-      />
-    </picture>
+        <img
+          src="/portfolio/assets/about-me-mob-2x-BJOhzVwk.jpg"
+          alt="My photo"
+          width="384"
+          height="448"
+          class="about-me-img"
+        />
+      </picture>
+      <div class="bio">
+        <h3 class="bio-title">BIO</h3>
 
-    <div class="about-bio">
-      <h3 class="about-subtitle">BIO</h3>
-      <div class="about-text-bio">
-        <p class="about-text text-one">
-          I'm Lloyd Jefferson, a talented programmer specializing in software
-          development. My expertise spans various programming languages and
-          technologies, and I am dedicated to continually enhancing my skills. I
-          thrive on seeking unconventional and creative solutions to problems,
-          leveraging a high level of analytical skills to effectively tackle
-          even the most challenging tasks.
-        </p>
-        <p class="about-text text-two">
-          Adaptable to both independent and team-oriented work, I collaborate
-          seamlessly with colleagues, exchanging ideas and finding optimal
-          solutions. My professional maturity enables me to navigate challenges
-          and stressful situations with a calm demeanor, maintaining a
-          consistently high quality of work. Committed to self-improvement, I
-          actively engage in studying new technologies and practices to stay
-          current with the latest innovations in the field.
-        </p>
+        <div class="bio-text-wrapper">
+          <p class="bio-text">
+            I'm Lloyd Jefferson, a talented programmer specializing in software
+            development. My expertise spans various programming languages and
+            technologies, and I am dedicated to continually enhancing my skills.
+            I thrive on seeking unconventional and creative solutions to
+            problems, leveraging a high level of analytical skills to
+            effectively tackle even the most challenging tasks.
+          </p>
+
+          <p class="bio-text">
+            Adaptable to both independent and team-oriented work, I collaborate
+            seamlessly with colleagues, exchanging ideas and finding optimal
+            solutions. My professional maturity enables me to navigate
+            challenges and stressful situations with a calm demeanor,
+            maintaining a consistently high quality of work. Committed to
+            self-improvement, I actively engage in studying new technologies and
+            practices to stay current with the latest innovations in the field.
+          </p>
+        </div>
       </div>
     </div>
-    <div class="about-tab">
-      <div class="about-educ">
-        <h3 class="about-subtitle">EDUCATION</h3>
-        <ul class="about-list">
-          <li class="about-list-item">
-            <p class="about-text about-item">
+    <div class="about-me-info">
+      <div class="about-me-content-item">
+        <h4 class="educ-title">EDUCATION</h4>
+        <ul class="educ-list">
+          <li class="educ-list-item">
+            <span class="list-mark">&#9679;</span>
+            <p class="educ-list-text">
               2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
               York
             </p>
           </li>
-          <li class="about-list-item">
-            <p class="about-text about-item">
+          <li class="educ-list-item">
+            <span class="list-mark">&#9679;</span>
+            <p class="educ-list-text">
               2019 - 2020 / Advanced Web Development Certificate, GoIT IT
               School, New York
             </p>
           </li>
-          <li class="about-list-item">
-            <p class="about-text about-item">
+          <li class="educ-list-item">
+            <span class="list-mark">&#9679;</span>
+            <p class="educ-list-text">
               2020 - 2022 / Advanced Blender Animation Techniques, Udemy
             </p>
           </li>
         </ul>
       </div>
-      <div class="about-role">
-        <h3 class="about-subtitle">ROLE</h3>
-        <ul class="about-list">
-          <li class="about-list-item">
-            <p class="about-text about-item">Frontend development</p>
+      <div class="about-me-content-list">
+        <h4 class="role-title">ROLE</h4>
+        <ul class="role-list">
+          <li class="role-list-item">
+            <span class="list-mark">&#9679;</span>
+            <p class="role-list-text">Frontend development</p>
           </li>
-          <li class="about-list-item">
-            <p class="about-text about-item">HeadlessCMS, Wordpress</p>
+          <li class="role-list-item">
+            <span class="list-mark">&#9679;</span>
+            <p class="role-list-text">HeadlessCMS, Wordpress</p>
           </li>
-          <li class="about-list-item">
-            <p class="about-text about-item">Blender (enjoy)</p>
+          <li class="role-list-item">
+            <span class="list-mark">&#9679;</span>
+            <p class="role-list-text">Blender (enjoy)</p>
           </li>
         </ul>
       </div>
@@ -327,16 +352,17 @@
         <div class="bottom-box">
           <h3 class="project-name">Wallet webservice</h3>
           <a
-            class="visit-button"
             href="https://github.com/VH-str/project-JS-TeamWork-FullStalkers"
-            target="_blank"
+            target="_blanc"
           >
-            <span>VISIT</span>
-            <svg class="button_icon" width="24" height="24">
-              <use
-                href="/portfolio/assets/icon-icon_visit-iDNxwZYD.svg#icon-icon_visit"
-              ></use>
-            </svg>
+            <button class="visit-button">
+              VISIT
+              <svg width="24" height="24">
+                <use
+                  href="/portfolio/assets/icon-icon_visit-CxSOc348.svg#icon-icon_visit"
+                ></use>
+              </svg>
+            </button>
           </a>
         </div>
       </li>
@@ -358,7 +384,7 @@
           <img
             class="project-img-card"
             src="./images/my_projects/projects-desk-01-min.png"
-            alt="Green harvest webservice"
+            alt="Wallet webservice"
             loading="lazy"
           />
         </picture>
@@ -366,16 +392,17 @@
         <div class="bottom-box">
           <h3 class="project-name">Green harvest webservice</h3>
           <a
-            class="visit-button"
             href="https://github.com/VH-str/project-JS-TeamWork-FullStalkers"
-            target="_blank"
+            target="_blanc"
           >
-            <span>VISIT</span>
-            <svg class="button_icon" width="24" height="24">
-              <use
-                href="/portfolio/assets/icon-icon_visit-iDNxwZYD.svg#icon-icon_visit"
-              ></use>
-            </svg>
+            <button class="visit-button">
+              VISIT
+              <svg width="24" height="24">
+                <use
+                  href="/portfolio/assets/icon-icon_visit-CxSOc348.svg#icon-icon_visit"
+                ></use>
+              </svg>
+            </button>
           </a>
         </div>
       </li>
@@ -397,30 +424,29 @@
           <img
             class="project-img-card"
             src="./images/my_projects/projects-desk-02-min.png"
-            alt="English Excellence webservice"
+            alt="Wallet webservice"
             loading="lazy"
           />
         </picture>
         <p class="project-skills">React, JavaScript, Node JS, Git</p>
         <div class="bottom-box">
-          <h3 class="project-name">English Excellence webservice</h3>
+          <h3 class="project-name">English Exellence webservice</h3>
           <a
-            class="visit-button"
             href="https://github.com/VH-str/project-JS-TeamWork-FullStalkers"
-            target="_blank"
+            target="_blanc"
           >
-            <span>VISIT</span>
-            <svg class="button_icon" width="18" height="18">
-              <use
-                href="/portfolio/assets/icon-icon_visit-iDNxwZYD.svg#icon-icon_visit"
-              ></use>
-            </svg>
+            <button class="visit-button">
+              VISIT
+              <svg width="24" height="24">
+                <use href="/portfolio/assets/icons-yh5Ih9pv.svg#icon-arrow45"></use>
+              </svg>
+            </button>
           </a>
         </div>
       </li>
     </ul>
-    <button type="button" class="more-projects more-projects-text">
-      LOAD MORE
+    <button class="more-projects">
+      <p class="more-projects-text">LOAD MORE</p>
     </button>
   </div>
 </section>
@@ -431,7 +457,7 @@
     <ul class="benefits-list">
       <li class="benefits-item">
         <svg class="benefits-icon" width="40" height="40">
-          <use href="/portfolio/assets/icons-Bsx_Cl9u.svg#icon-user"></use>
+          <use href="/portfolio/assets/icons-yh5Ih9pv.svg#icon-user"></use>
         </svg>
         <h3 class="benefits-h">Expertise</h3>
         <p class="benefits-p">With extensive experience in development, I have a deep understanding of programming and
@@ -439,7 +465,7 @@
       </li>
       <li class="benefits-item">
         <svg class="benefits-icon" width="40" height="40">
-          <use href="/portfolio/assets/icons-Bsx_Cl9u.svg#icon-message-chat-circle"></use>
+          <use href="/portfolio/assets/icons-yh5Ih9pv.svg#icon-message-chat-circle"></use>
         </svg>
         <h3 class="benefits-h">Communication</h3>
         <p class="benefits-p">Understanding your needs and wants is my priority and I am always available for
@@ -449,7 +475,7 @@
       </li>
       <li class="benefits-item">
         <svg class="benefits-icon" width="40" height="40">
-          <use href="/portfolio/assets/icons-Bsx_Cl9u.svg#icon-brush"></use>
+          <use href="/portfolio/assets/icons-yh5Ih9pv.svg#icon-brush"></use>
         </svg>
         <h3 class="benefits-h">Art</h3>
         <p class="benefits-p">Thanks to my creative nature, I am ready to accept challenges and help you bring your
@@ -458,7 +484,7 @@
       </li>
       <li class="benefits-item">
         <svg class="benefits-icon" width="40" height="40">
-          <use href="/portfolio/assets/icons-Bsx_Cl9u.svg#icon-hourglass"></use>
+          <use href="/portfolio/assets/icons-yh5Ih9pv.svg#icon-hourglass"></use>
         </svg>
         <h3 class="benefits-h">Urgent execution</h3>
         <p class="benefits-p">I understand how important time is to you. Ready to work quickly and efficiently, without
@@ -573,12 +599,12 @@
       <div class="button-wrapper visually-hidden">
         <button aria-label="previous review" class="swiper-button-prev">
           <svg class="" width="20px" height="20px">
-            <use href="/portfolio/assets/icons-Bsx_Cl9u.svg#icon-arrow-left2"></use>
+            <use href="/portfolio/assets/icons-yh5Ih9pv.svg#icon-arrow-left2"></use>
           </svg>
         </button>
         <button aria-label="next review" class="swiper-button-next">
           <svg class="icon-svg" width="20px" height="20px">
-            <use href="/portfolio/assets/icons-Bsx_Cl9u.svg#icon-arrow-right2"></use>
+            <use href="/portfolio/assets/icons-yh5Ih9pv.svg#icon-arrow-right2"></use>
           </svg>
         </button>
       </div>
@@ -586,111 +612,78 @@
   </div>
 </section>
 
-      <section class="work-together container" aria-labelledby="work-together-title">
-  <h2 id="work-together-title" class="benefits-title wt-title">
-    LET'S <span class="benefits-span">WORK TOGETHER</span>
-  </h2>
-  <div class="activ-part">
-    <div class="wt-contacts">
-      <p class="wt-text">
-        CONTACT ME TO TRANSFORM YOUR IDEAS INTO EXCEPTIONAL SOLUTIONS
-      </p>
-      <address class="address-wt">
-        <ul class="address-wt-list">
-          <li class="address-wt-list-item">
-            <svg
-              class="address-wt-svg"
-              width="24"
-              height="24"
-              aria-hidden="true"
-            >
-              <use href="/portfolio/assets/icons-Bsx_Cl9u.svg#icon-phone"></use>
-            </svg>
-            <a
-              class="address-wt-list-item-link"
-              href="tel:+380904567890"
-              aria-label="Phone number"
-              >+380904567890</a
-            >
-          </li>
-          <li class="address-wt-list-item">
-            <svg
-              class="address-wt-svg"
-              width="24"
-              height="24"
-              aria-hidden="true"
-            >
-              <use href="/portfolio/assets/icons-Bsx_Cl9u.svg#icon-mail"></use>
-            </svg>
-            <a
-              class="address-wt-list-item-link"
-              href="mailto:lloydjefferson@gmail.com"
-              aria-label="Email address"
-              >lloydjefferson@gmail.com</a
-            >
-          </li>
-          <li class="address-wt-list-item">
-            <svg
-              class="address-wt-svg"
-              width="24"
-              height="24"
-              aria-hidden="true"
-            >
-              <use href="/portfolio/assets/icons-Bsx_Cl9u.svg#icon-geolocation"></use>
-            </svg>
-            <a
-              class="address-wt-list-item-link"
-              href="https://www.google.com/maps?q=New+York"
-              target="_blank"
-              aria-label="Location"
-              >USA, New York</a
-            >
-          </li>
-        </ul>
-      </address>
-    </div>
-    <form action="/submit" method="post" class="wt-form">
-      <legend class="sr-only"></legend>
-      <div class="form-group">
-        <label for="user-email" class="sr-only"></label>
-        <input
-          type="email"
-          class="wt-input"
-          name="user-email"
-          id="user-email"
-          placeholder="Your email*"
-          required
-        />
+      <section class="work-together" id="work-together-title">
+  <div class="container work-together-container">
+    <h2 class="work-together-title">
+      LET'S <span class="green-collorText">WORK TOGETHER</span>
+    </h2>
+    <div class="wo-toget-wall">
+      <div>
+        <p class="work-together-text">
+          CONTACT ME TO TRANSFORM YOUR IDEAS INTO EXCEPTIONAL SOLUTIONS.
+        </p>
+        <address class="address-block">
+          <ul class="address-list">
+            <li class="address-item">
+              <a class="address" href="tel:+380904567890" target="_blank"
+                ><svg class="item-icon" width="24" height="24">
+                  <use href="/portfolio/assets/icons-yh5Ih9pv.svg#icon-phone"></use>
+                </svg>
+                +38 090 456 78 90
+              </a>
+            </li>
+            <li class="address-item">
+              <a
+                class="address"
+                href="mailto:lloydjefferson@gmail.com"
+                target="_blank"
+                ><svg class="item-icon" width="24" height="24">
+                  <use href="/portfolio/assets/icons-yh5Ih9pv.svg#icon-mail"></use>
+                </svg>
+                lloydjefferson@gmail.com
+              </a>
+            </li>
+            <li class="address-item">
+              <a
+                class="address"
+                href="https://www.google.com/maps?q=New+York"
+                target="_blank"
+                ><svg class="item-icon" width="24" height="24">
+                  <use href="/portfolio/assets/icons-yh5Ih9pv.svg#icon-geolocation"></use>
+                </svg>
+                USA, New York
+              </a>
+            </li>
+          </ul>
+        </address>
       </div>
-      <div class="form-group">
-        <label for="user-message" class="sr-only"></label>
-        <textarea
-          name="user-message"
-          class="wt-message wt-input"
-          id="user-message"
-          cols="30"
-          rows="10"
-          placeholder="Message"
-          required
-        ></textarea>
-      </div>
-      <button type="submit" class="wt-submit" aria-label="Send your message">
-        SEND MESSAGE
-      </button>
-    </form>
-  </div>
-  <div class="backdrop">
-    <div class="modal">
-      <button type="button" class="close-button-modal">
-        <svg class="close-button-svg" width="24" height="24">
-          <use href="/portfolio/assets/icons-Bsx_Cl9u.svg#icon-x"></use>
-        </svg>
-      </button>
-      <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
-      <p class="modal-text">
-        The manager will contact you shortly to discuss further details and
-        opportunities for cooperation. Please stay in touch.
-      </p>
+      <form class="input-info">
+        <div class="email-confirm">
+          <div class="input-form">
+            <input
+              class="form-input"
+              name="email"
+              type="email"
+              placeholder="Your email*"
+              id="try-agen"
+              pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+              required
+            />
+            <svg class="done-icon is-hidden" width="16" height="16">
+              <use href="/portfolio/assets/icons-yh5Ih9pv.svg#icon-check"></use>
+            </svg>
+            <p class="invalid-email is-hidden-text">Invalid email, try again</p>
+          </div>
+          <textarea
+            class="textela-input"
+            id="client_comment"
+            name="comment"
+            placeholder="Message"
+            required
+          ></textarea>
+        </div>
+        <button class="send-button Submit" type="submit">SEND MESSAGE</button>
+      </form>
     </div>
   </div>
 </section>
