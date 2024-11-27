@@ -70,8 +70,9 @@
     align-items: flex-end;
   }
 
-  .button_icon {
+  .button_icon use {
     stroke: red;
+    fill: red;
   }
 
   .visit-button {
